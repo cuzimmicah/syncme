@@ -1,0 +1,40 @@
+# Cursor Agent Rules for SyncMe Project
+
+## Project Context
+This is a Python voice-to-calendar scheduling app with taste integration.
+
+## Key Libraries & APIs
+- OpenAI (GPT-4, Whisper)
+- Google Calendar API
+- Qloo API for taste recommendations
+- FastAPI for web framework
+- httpx for async HTTP requests
+
+## Code Style Guidelines
+- Use async/await for all API calls
+- Follow PEP 8 naming conventions
+- Use type hints everywhere
+- Handle errors gracefully with try/except
+- Use Pydantic models for data validation
+
+## File Structure Rules
+- `/voice/` - Audio processing and transcription
+- `/nlp/` - Intent parsing and GPT interactions
+- `/calendar/` - Google Calendar integration
+- `/taste/` - Qloo API integration
+- `/utils/` - Authentication and helpers
+- `/tests/` - Unit tests with pytest
+
+## Common Patterns
+1. Always use environment variables for API keys
+2. Create Pydantic models for data structures
+3. Use dependency injection for API clients
+4. Write unit tests for all functions
+5. Use async context managers for resource cleanup
+
+## When Creating New Files
+- Add appropriate imports at the top
+- Include docstrings for all functions
+- Add type hints for parameters and return values
+- Include error handling
+- Add logging where appropriate
